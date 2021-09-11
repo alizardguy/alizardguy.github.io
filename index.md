@@ -8,7 +8,7 @@
   </head>
 
   <body>
-  <h1>Lizard's git site!</h1>
+  <h1>alizardguy</h1>
   <p>idk lol</p>
   </body>
 </html>
