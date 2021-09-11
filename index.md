@@ -1,5 +1,7 @@
 <html>
+  <head>
   <title> alizardguy </title>
+  </head>
 
   <body>
   <h1>Lizard's git site!</h1>
