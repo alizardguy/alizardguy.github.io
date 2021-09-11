@@ -19,6 +19,10 @@ body {
     clear: both;
   }
 
+  .logo{
+      padding: 10px 0;
+  }
+
   nav {
       float: right;
   }
@@ -31,4 +35,12 @@ body {
 
   nav li {
       display: inline-block;
+      margin-left: 70px;
+      padding-top: 23px;
+  }
+
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;  
   }
