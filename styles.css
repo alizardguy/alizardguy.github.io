@@ -1,5 +1,14 @@
 body {
     margin: 0;
-    background-color: pink;
+    background: #222;;
     color: #fff;
+  }
+
+  .container {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  header {
+      background: #55d6aa;
   }
