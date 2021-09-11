@@ -1,6 +1,9 @@
+<html lang ="en">
 <html>
   <head>
-  <title> alizardguy </title>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, inital-scale=1.0">
+  <title>alizardguy</title>
   </head>
 
   <body>
