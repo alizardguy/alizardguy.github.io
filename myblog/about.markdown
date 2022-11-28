@@ -4,11 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# Why is this site a thing
-Mainly just wanted somewhere to test suff and post that isn't my Twitter,
-do not expect much activity here.
-
-# This site is made with Jekyll with the Minima theme
+# The blog section of this site
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
 [minima](https://github.com/jekyll/minima)
