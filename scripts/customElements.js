@@ -1,6 +1,6 @@
 /* custom header element */
 class MyHeader extends HTMLElement{
-    connectCallback(){
+    connectedCallback(){
         this.innerHTML = `
             <h1>My Header</h1>
         `;
