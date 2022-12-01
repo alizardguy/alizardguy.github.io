@@ -47,4 +47,14 @@ Initial date:   12-01-2022
     height: 100%;
     padding: 15px 32px;
     font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.navbar button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navbar button:active{
+    background-color: #264d49;
 }
