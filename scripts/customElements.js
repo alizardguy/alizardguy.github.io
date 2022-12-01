@@ -4,12 +4,12 @@ class MyHeader extends HTMLElement{
         this.innerHTML = `
         <!--header-->
         <header class="header">
-            <div class="inner_header">
+            <div class="inner_header noSelect">
                 <div class="logo_container">
                     <h1>alizard's <span>site</span></h1>
                 </div>
 
-                <nav class="navbar">
+                <nav class="navbar noSelect">
                     <button>HOME</button>
                     <button>404</button>
                 </nav>
