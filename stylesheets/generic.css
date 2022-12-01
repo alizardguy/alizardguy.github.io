@@ -13,3 +13,7 @@
     -ms-user-select: none; 
     user-select: none;
 }
+
+body{
+    background-color: #08383a;
+}
