@@ -2,7 +2,19 @@
 class MyHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-            <h1>My Header</h1>
+        <!--header-->
+        <header class="header">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1>alizard's <span>site</span></h1>
+                </div>
+
+                <nav class="navbar">
+                    <button>HOME</button>
+                    <button>404</button>
+                </nav>
+            </div>
+        </header>
         `;
     };
 }
