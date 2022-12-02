@@ -68,5 +68,11 @@ Initial date:   12-01-2022
 
 /* footer */
 footer{
-    background-color: red;
+    background-color: #264d49;
+    color: white;
 }
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+  }

@@ -21,3 +21,5 @@ body{
 main{
     color: white;
 }
+
+html, body { height: 100%;}
