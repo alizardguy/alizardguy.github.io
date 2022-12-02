@@ -72,6 +72,10 @@ footer{
     color: white;
 }
 
+footer p{
+    margin: 0 1%;
+}
+
 body > footer {
     position: sticky;
     top: 100vh;
