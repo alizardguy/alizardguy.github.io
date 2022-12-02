@@ -1,8 +1,9 @@
-/* header bar CSS 
+/* header bar and footer CSS 
 Created by: 	alizardguy
 Initial date:   12-01-2022
 */
 
+/* header */
 .header{
     width: 100%;
     height: 50px;
@@ -63,4 +64,9 @@ Initial date:   12-01-2022
 
 .navbar button:active{
     background-color: #264d49;
+}
+
+/* footer */
+footer{
+    background-color: red;
 }
