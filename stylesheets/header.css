@@ -33,6 +33,13 @@ Initial date:   12-01-2022
     font-weight: 800;
 }
 
+@media only screen and (max-width: 556px){
+    .logo_container h1{
+        vertical-align: left;
+        font-size: 150%;
+    }
+}
+
 .navbar{
     float: right;
     height: 100%;
@@ -54,7 +61,7 @@ Initial date:   12-01-2022
 
 @media only screen and (max-width: 556px){
     .navbar button{
-        padding: 15px 16px;
+        padding: 15px 13px;
     }
 }
 
