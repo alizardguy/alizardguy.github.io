@@ -12,8 +12,21 @@
     </head>
     <!--body-->
     <body>
+        <!--incase of no JS support-->
+        <noscript>Your browser does not support JavaScript, This page may not function as intended!</noscript>
+        <!--main-->
         <main>
             <h1>Hello world :D</h1>
         </main>
+
+        <!--parse query string-->
+        <script>
+            const queryString = window.location.search;
+
+            const urlParams = new URLSearchParams(queryString);
+
+            const search = urlParams.get('search')
+            console.log(search);
+        </script>
     </body>
 </html>
