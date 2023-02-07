@@ -11,7 +11,6 @@ class MyHeader extends HTMLElement{
 
                 <nav class="navbar noSelect">
                     <button type="button" onclick="location.href='https://alizardguy.github.io/index.html'">HOME</button>
-                    <button type="button" onclick="location.href='https://alizardguy.github.io/myblog/'">MY BLOG</button>
                 </nav>
             </div>
         </header>
