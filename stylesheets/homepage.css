@@ -1,2 +1,24 @@
 /* unique CSS for home page 
 by: alizardguy */
+
+/* home 3 column layout */
+.homeColumns{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    margin-top: 30px;
+}
+
+.homeLeft{
+    flex: 1;
+}
+
+.homeCenter{
+    flex: 1;
+    text-align: center;
+}
+
+.homeRight{
+    flex: 1;
+}
