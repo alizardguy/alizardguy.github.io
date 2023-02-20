@@ -1,24 +1,17 @@
 /* unique CSS for home page 
 by: alizardguy */
 
-/* home 3 column layout */
-.homeColumns{
-    padding: 5px;
+section{
+    position: relative;
     display: flex;
-    justify-content: center;
-    margin: 5px 0;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
 }
 
-.homeLeft{
-    flex: 1;
+.green{
+    background-color: green;
 }
 
-.homeCenter{
-    flex: 1;
-    text-align: center;
-}
-
-.homeRight{
-    flex: 1;
-}
+/* simple curve */
