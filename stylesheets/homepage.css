@@ -10,8 +10,29 @@ section{
     padding: 100px 20vw;
 }
 
-.green{
-    background-color: green;
+/* welcome blob */
+.offset-Welcome{
+    position: absolute;
 }
 
-/* simple curve */
+/* footer curve */
+.custom-shape-divider-bottom-1676878086 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676878086 svg {
+    position: relative;
+    display: block;
+    width: calc(197% + 1.3px);
+    height: 81px;
+}
+
+.custom-shape-divider-bottom-1676878086 .shape-fill {
+    fill: #417505;
+}
