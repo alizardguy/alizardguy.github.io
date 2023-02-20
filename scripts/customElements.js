@@ -19,5 +19,3 @@ class MyHeader extends HTMLElement{
 };
 /* link to element for parser */
 customElements.define('my-header', MyHeader);
-
-
