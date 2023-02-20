@@ -3,6 +3,7 @@
     .large{
         font: bold 50px sans-serif;
         fill: white;
+        font-family: poppins;
     }
 </style>
 <rect x="0" y="0" width="900" height="600" fill="#08383a"></rect><g transform="translate(465.36041730455406 263.5963469061943)">
