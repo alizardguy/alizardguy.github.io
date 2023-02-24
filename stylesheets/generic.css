@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
 
-    font-family: 'Helvetica';
+    font-family: 'SignikaNegative';
 }
 
 .noSelect{
@@ -23,3 +23,8 @@ main{
 }
 
 html, body { height: 100%;}
+
+@font-face {
+    font-family: SignikaNegative;
+    src: url(../assets/fonts/SignikaNegative-VariableFont_wght.ttf);
+  }
