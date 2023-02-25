@@ -36,3 +36,32 @@ section{
 .custom-shape-divider-bottom-1676878086 .shape-fill {
     fill: #417505;
 }
+
+/* media queries */
+    /* portrait */
+@media (orientation: portrait) {
+    #homeFooterArt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 300ms, opacity 300ms;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    #homeFooterArt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 300ms, opacity 300ms;
+    }
+}
+
+    /* landscape */
+@media (orientation: landscape) and (min-height: 400px) {
+    #homeFooterArt{
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 0s, opacity 300ms;
+    }
+}
+
+
