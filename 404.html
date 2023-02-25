@@ -22,6 +22,8 @@
         <meta name="twitter:title" content="page not found">
         <meta name="twitter:description" content="error 404 landing page">
 
+        <!--twemoji link-->
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <main>
@@ -30,5 +32,32 @@
                 <h3>error 404: page not found</h3>
             </div>
         </main>
+
+    <!-- twemoji start -->
+    <script>
+        window.onload = function() {    
+        // Parses the document body and    
+        // inserts <img> tags in place of Unicode Emojis    
+        twemoji.parse(document.body, 
+                {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
+        );
+
+    }
+    </script>
+    <style>
+        img.emoji {
+            /* Since we are using SVGs, you have to change the width using CSS */
+            width:4em;
+
+            /* 
+            This is to make the emojis feel like actual emojis to 
+            the user and they won't act like images. This makes the emojis
+            non-reactive to any mouse events such as dragging, 
+            hovering, clicking etc. Makes it feel like its actual text.
+            */
+            pointer-events: none; 
+        }
+    </style>
+    <!-- twemoji end -->
     </body>
 </html>
