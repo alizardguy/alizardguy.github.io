@@ -29,8 +29,6 @@
         <meta name="keywords" content="alizard, NeosVR, alizardguy, github, Lizard Boi INC">
         <meta name="author" content="alizardguy">
         <meta name="robots" content="index, follow" />
-        <!--emoji-->
-        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--before scripts-->
@@ -52,31 +50,5 @@
                 </svg>
             </div>
         </footer>
-        <!-- twemoji start -->
-        <script>
-            window.onload = function() {    
-            // Parses the document body and    
-            // inserts <img> tags in place of Unicode Emojis    
-            twemoji.parse(document.body, 
-                    {folder: 'svg', ext: '.svg'} // This is to specify to Twemoji to use SVGs and not PNGs
-            );
-
-        }
-        </script>
-        <style>
-            img.emoji {
-                /* Since we are using SVGs, you have to change the width using CSS */
-                width:0.8em;
-    
-                /* 
-                This is to make the emojis feel like actual emojis to 
-                the user and they won't act like images. This makes the emojis
-                non-reactive to any mouse events such as dragging, 
-                hovering, clicking etc. Makes it feel like its actual text.
-                */
-                pointer-events: none; 
-            }
-        </style>
-        <!-- twemoji end -->
     </body>
 </html>
