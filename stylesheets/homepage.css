@@ -1,7 +1,7 @@
 /* unique CSS for home page 
 by: alizardguy */
 
-section{
+section {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ section{
 }
 
 /* welcome blob */
-.offset-Welcome{
+.offset-Welcome {
     position: absolute;
 }
 
