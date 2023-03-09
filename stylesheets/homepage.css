@@ -1,67 +1,61 @@
 /* unique CSS for home page 
 by: alizardguy */
 
-section {
-    position: relative;
+body{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* remove list style */
+ul {
+    list-style-type: none;
+    margin: 2%;
+  }
+
+li{
+    margin-top: 20px;
+    padding: 1%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
+    transition: ease-in-out 0.3s;
+    box-shadow: inset 0 0 0 0;
 }
 
-/* welcome blob */
-.offset-Welcome {
-    position: absolute;
+li a{
+    color: white;
+    transition: ease-in-out 0.3s;
 }
 
-/* footer curve */
-.custom-shape-divider-bottom-1676878086 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+li:hover{
+    box-shadow: inset 0 0 0 1000px white;
+    color: black;
+}
+
+li:hover a{
+    color: black;
+}
+
+/* selection layout custom */
+main{
+    background-color: black;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1676878086 svg {
-    position: relative;
-    display: block;
-    width: calc(197% + 1.3px);
-    height: 81px;
+.selectArea{
+    padding: 2% 10%;
 }
 
-.custom-shape-divider-bottom-1676878086 .shape-fill {
-    fill: #417505;
+.selectItem{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5in;
 }
 
-/* media queries */
-    /* portrait */
-@media (orientation: portrait) {
-    #homeFooterArt{
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s linear 300ms, opacity 300ms;
-    }
+/* Welcome text */
+.welcomeText{
+    padding-left: 4%;
+    padding-top: 2%;
 }
-
-@media screen and (max-height: 400px) {
-    #homeFooterArt{
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s linear 300ms, opacity 300ms;
-    }
-}
-
-    /* landscape */
-@media (orientation: landscape) and (min-height: 400px) {
-    #homeFooterArt{
-        visibility: visible;
-        opacity: 1;
-        transition: visibility 0s linear 0s, opacity 300ms;
-    }
-}
-
-
