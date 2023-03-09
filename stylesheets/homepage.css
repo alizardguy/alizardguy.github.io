@@ -22,6 +22,12 @@ li{
     box-shadow: inset 0 0 0 0;
 }
 
+@media only screen and (max-width: 600px) {
+    li{
+        box-shadow: inset 0 0 0 1000px #38736d;
+    }
+}
+
 li a{
     color: white;
     transition: ease-in-out 0.3s;
@@ -43,8 +49,15 @@ main{
     width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    main{
+        background-color: #08383a;
+        transition: ease-in-out 0.3s;
+    }
+}
+
 .selectArea{
-    padding: 2% 10%;
+    padding: 0% 10%;
 }
 
 .selectItem{
@@ -58,4 +71,14 @@ main{
 .welcomeText{
     padding-left: 4%;
     padding-top: 2%;
+    font-size: 2rem;
+    visibility: visible;
+    
+}
+
+/* Welcome text media query */
+@media only screen and (max-width: 600px) {
+    .welcomeText{
+        visibility: hidden;
+    }
 }
