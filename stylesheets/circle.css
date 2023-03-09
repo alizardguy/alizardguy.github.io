@@ -17,5 +17,7 @@
 @media only screen and (max-width: 600px) {
     .circle{
         visibility: hidden;
+        border: transparent;
+        box-shadow: transparent;
     }
 }
