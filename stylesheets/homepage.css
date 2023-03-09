@@ -69,16 +69,40 @@ main{
 
 /* Welcome text */
 .welcomeText{
-    padding-left: 4%;
-    padding-top: 2%;
-    font-size: 2rem;
+    margin-top: 2%;
+    font-size: 1.5vw;
     visibility: visible;
+    text-align: center;
+    overflow: hidden;
+    border-right: .15em solid green;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    margin: 0 auto;
+    width: 13vw;
     
 }
 
+.welcomeTextArea{
+    padding-top: 2%;
+}
 /* Welcome text media query */
 @media only screen and (max-width: 600px) {
     .welcomeText{
         visibility: hidden;
     }
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 13vw }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green; }
+  }
