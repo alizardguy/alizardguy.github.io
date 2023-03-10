@@ -65,6 +65,8 @@ main{
     width: 100%;
     text-align: center;
     font-size: 0.5in;
+    border:none;
+    background-color: transparent;
 }
 
 /* Welcome text */
