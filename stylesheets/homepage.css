@@ -15,7 +15,6 @@ by: alizardguy */
     margin: 2%;
     overflow-x:scroll;
     overflow-y: hidden;
-    height: 520px;
     vertical-align : top;
     white-space: nowrap;
     padding-bottom: 1.5%;
@@ -30,7 +29,7 @@ li{
 
 .pod{
     margin: 8px;
-    height: 450px;
+    height: 300px;
     background-size: cover;
 }
 
