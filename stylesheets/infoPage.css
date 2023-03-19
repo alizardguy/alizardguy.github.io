@@ -1,0 +1,17 @@
+/* CSS for info pages
+Created: 03-19-2023
+by: alizardguy */
+
+.infoBox{
+    margin: 2vw 10%;
+}
+
+h1{
+    text-align: center;
+}
+
+article{
+    background-color: #38736d;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
