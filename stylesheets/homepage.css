@@ -84,5 +84,6 @@ a{
 }
 
 .socailLinkLi{
-margin: 20px;
+    min-width: 50px;
+    max-width: 200px;
 }
