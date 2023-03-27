@@ -76,6 +76,7 @@ a{
     padding-left: 2%;
     padding-top: 1%;
     margin-bottom: 40px;
+    display: block;
 }
 
 .IntroText{
@@ -86,4 +87,6 @@ a{
 .socailLinkLi{
     min-width: 50px;
     max-width: 200px;
+    float: left;
+    list-style: none
 }
