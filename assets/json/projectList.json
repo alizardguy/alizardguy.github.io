@@ -1,0 +1,12 @@
+{
+"projects":{
+     "boatGame":{
+        "title":"Boat Game",
+        "state":"WIP"
+    },
+     "testGame":{
+        "title":"test game",
+        "state":"test"
+    }
+}
+}
