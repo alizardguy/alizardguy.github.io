@@ -7,6 +7,12 @@ main{
     font-size: 5vw;
 }
 
+@media screen and (max-width: 413px) {
+    .intro{
+        text-align: center;
+    }
+}
+
 .my_name{
     font-weight: bold;
     color: greenyellow;
@@ -18,15 +24,4 @@ main{
     padding-top: 5%;
     font-size: 2vw;
     padding-right: 30%;
-}
-
-/* scroll to see more */
-.scroll_line{
-    border: 1px solid gray;
-}
-
-.scroll_to_see_more{
-    padding-top: 15px;
-    text-align: center;
-    color: gray;
 }
