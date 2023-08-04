@@ -30,7 +30,7 @@
         <main>
             <div class="area404">
                 <h1>🦎</h1>
-                <h3>error 404: page not found</h3>
+                <h3 id="errorTXT">error 404: page not found</h3>
             </div>
         </main>
 
@@ -48,9 +48,8 @@
     <!-- funny 404 stuff -->
     <script>
         var localpathname = window.location.pathname;
-        console.log(localpathname)
-        localpathname = localpathname.replace("/","")
-        console.log(localpathname)
+        localpathname = localpathname.replace("/","");
+        document.getElementById("errorTXT").textContent = "error 404: page '" + localpathname + "' not found"
     </script>
     <style>
         img.emoji {
