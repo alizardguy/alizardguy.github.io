@@ -47,7 +47,10 @@
     </script>
     <!-- funny 404 stuff -->
     <script>
-        console.log(window.location.pathname);
+        var localpathname = window.location.pathname;
+        console.log(localpathname)
+        localpathname = localpathname.replace("/","")
+        console.log(localpathname)
     </script>
     <style>
         img.emoji {
