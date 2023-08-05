@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>yipee</title>
+        <title>Click anywhere</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,9 +9,7 @@
             body{
                 background-color: whitesmoke;
                 color: black;
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: black;
-                background-size: cover;
+                background-size: 259% 123%;
                 background-position: center center;
             }
 
@@ -38,6 +36,10 @@
         <h1 id="userip">Click anywhere</h1>
         </section>
 
+        <a id="godIHateLife" class="twitter-share-button"
+        href="https://youtu.be/dQw4w9WgXcQ">
+        Peep the X</a>
+
         <audio autoplay id="audio">
             <source src="https://dl.sndup.net/c5s6/funkgay.m4a">
           </audio>
@@ -52,7 +54,6 @@
                     has_clicked = true;
                     
                     start();
-                    
                 }
             }))
 
@@ -60,11 +61,16 @@
             function start(){
                 console.log("let's go :D")
 
+                    var theUserIP;
+
                     //set text
                     const url = "https://api.ipify.org/"
                     fetch(url)
                     .then( r => r.text() )
                     .then( t => document.getElementById("userip").textContent = t)
+                    .then( t => document.getElementById("godIHateLife").href = "https://twitter.com/intent/tweet?text=My%20ip%20is%20" + t)
+
+
 
                     //start music
                     var thissound = document.getElementById("audio");
