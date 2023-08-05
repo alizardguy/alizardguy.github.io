@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yipee</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body{
+                background-color: whitesmoke;
+                color: black;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: black;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 3vw;
+            }
+
+            section {
+        display: flex;
+        width: 50%;
+        height: 85vh;
+        margin: auto;
+        border-radius: 10px;
+        align-items:center;
+        justify-content:center;
+      }
+
+        </style>
+    </head>
+    
+    <body>
+        <section>
+        <h1 id="userip">Click anywhere</h1>
+        </section>
+
+        <audio autoplay id="audio">
+            <source src="https://dl.sndup.net/c5s6/funkgay.m4a">
+          </audio>
+
+        <script>
+            var has_clicked = false;
+
+            //wait for click
+            document.querySelectorAll('*')
+            .forEach(element => element.addEventListener('click', e => {
+                if (has_clicked == false){
+                    has_clicked = true;
+                    
+                    start();
+                    
+                }
+            }))
+
+            //start function
+            function start(){
+                console.log("let's go :D")
+
+                    //set text
+                    const url = "https://api.ipify.org/"
+                    fetch(url)
+                    .then( r => r.text() )
+                    .then( t => document.getElementById("userip").textContent = t)
+
+                    //start music
+                    var thissound = document.getElementById("audio");
+                    thissound.play();
+
+                    document.body.style.backgroundImage = 'url("../assets/memes/fish-spinning.gif")'
+            }
+        </script>
+    </body>
+</html>
