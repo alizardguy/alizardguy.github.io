@@ -1,0 +1,17 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "alizard's site"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "D:\\codeProjects\\alizardguy.github.io\\favicon.ico"
+description = "What alizard is up to"
+
+[author]
+name = "alizardguy"
+bio = "I'm a lizard"
+headline = "I am a lizard"
