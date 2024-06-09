@@ -3,5 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Home
 ---
-# Welcome to my site
+# Hello, I'm alizard
+I am a Computer Science student and game dev.
