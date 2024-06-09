@@ -30,7 +30,7 @@ twitter_username: alizardguy
 github_username:  alizardguy
 
 # Build settings
-theme: cvless
+theme: minima
 plugins:
   - jekyll-feed
 
