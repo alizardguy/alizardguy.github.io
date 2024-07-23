@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20.15.1'
 
-      #- run: npm ci
+      - run: npm ci
 
       - run: npm run build
 
