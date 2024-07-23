@@ -18,6 +18,7 @@ api-docs/
 .idea
 
 # Ignore eleventy output when doing manual tests
+_site/
 
 # Ignore test files
 .cache
