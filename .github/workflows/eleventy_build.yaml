@@ -1,15 +1,27 @@
-language: node_js
-node_js:
-  - 12
-before_script:
-  - npm install @11ty/eleventy -g
-script: eleventy --pathprefix="/"
-deploy:
-  local-dir: _site
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  target_branch: master
-  on:
-    branch: dev
+name: Eleventy Build
+
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: $
+          publish_dir: ./_site
