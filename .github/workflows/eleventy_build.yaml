@@ -1,20 +1,23 @@
-name: Eleventy Build
-on: [push]
- 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+# Runs build and test
+name: CI
+
+on:
+  push:
+    branches: [main]
 
 jobs:
-  build_deploy:
-    runs-on: ubuntu-22.04
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
     steps:
-      - uses: actions/checkout@master
-      - name: Build
-        uses: TartanLlama/actions-eleventy@master
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site 
-          publish_branch: gh-pages
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build-ci
