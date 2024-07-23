@@ -14,3 +14,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site 
           publish_branch: gh-pages
+
+git checkout gh-pages git add CNAME git commit -m ‘:wrench: Added CNAME’ git push gh-pages origin
