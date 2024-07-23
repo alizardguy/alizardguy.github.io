@@ -1,8 +1,0 @@
-            - name: Build Eleventy (11ty)
-  # You may pin to the exact commit or the version.
-  # uses: extrawitz/11ty-dockerless-build@c80d7430000a8c370ad0535bdbc64a094a2b504b
-  uses: extrawitz/11ty-dockerless-build@v1
-  with:
-    # arguments to be used, when running "eleventy"
-    args: # optional
-          
