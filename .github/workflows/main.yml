@@ -1,9 +1,5 @@
-name: Build Eleventy
-
-on:
-  push:
-    branches:
-      - main
+name: Eleventy Build
+on: [push]
 
 jobs:
   build:
