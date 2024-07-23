@@ -1,16 +1,15 @@
-name: Eleventy Build
-on: [push]
-
-jobs:
-  build_deploy:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@master
-      - name: Build
-        uses: TartanLlama/actions-eleventy@master
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site 
-          publish_branch: gh-pages
+language: node_js
+node_js:
+  - 12
+before_script:
+  - npm install @11ty/eleventy -g
+script: eleventy --pathprefix="/"
+deploy:
+  local-dir: _site
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target_branch: master
+  on:
+    branch: dev
