@@ -1,6 +1,15 @@
 name: Eleventy Build
 on: [push]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+ 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build_deploy:
     runs-on: ubuntu-22.04
@@ -10,6 +19,11 @@ jobs:
         uses: TartanLlama/actions-eleventy@master
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
+        needs: build
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        id: deployment
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site 
