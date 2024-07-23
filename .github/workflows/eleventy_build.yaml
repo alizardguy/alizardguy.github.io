@@ -19,11 +19,6 @@ jobs:
         uses: TartanLlama/actions-eleventy@master
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
-        needs: build
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        id: deployment
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site 
