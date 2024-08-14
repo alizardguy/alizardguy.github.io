@@ -1,0 +1,14 @@
+.intro-text{
+    color: whitesmoke;
+    font-size: 7vw;
+    margin: 0 20%;
+}
+
+.intro-sub-text{
+    font-size: 2vw;
+}
+
+.intro-block{
+        padding-top: 75px;
+        text-align: center;
+}
