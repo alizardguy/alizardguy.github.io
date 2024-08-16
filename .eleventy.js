@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("CNAME");
     eleventyConfig.addPassthroughCopy("./src/style/");
+    eleventyConfig.addPassthroughCopy("./src/scripts/");
     eleventyConfig.addPassthroughCopy("favicon.ico");
     return {
         dir: {
