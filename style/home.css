@@ -1,11 +1,10 @@
 .intro-text{
     color: whitesmoke;
-    font-size: 7vw;
-    margin: 0 20%;
+    font-size: 7ch;
 }
 
 .intro-sub-text{
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .intro-block{
