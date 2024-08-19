@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/style/");
     eleventyConfig.addPassthroughCopy("./src/scripts/");
     eleventyConfig.addPassthroughCopy("favicon.ico");
+    eleventyConfig.addPassthroughCopy("./src/.well-known");
     return {
         dir: {
             input: 'src',
