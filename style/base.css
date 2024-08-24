@@ -13,10 +13,26 @@ body{
 }
 
 a.button {
-    padding: 1px 6px;
-    border: 1px outset buttonborder;
-    border-radius: 3px;
-    color: buttontext;
-    background-color: buttonface;
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+ul.nice-list{
+    list-style: none;
+    text-align: center;
+    align-self: center;
+}
+
+li.nice-list{
+    margin: 3%;
+}
+
+a.wide{
+    width: 60vw;
 }
