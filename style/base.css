@@ -23,16 +23,3 @@ a.button {
     font-size: 16px;
 }
 
-ul.nice-list{
-    list-style: none;
-    text-align: center;
-    align-self: center;
-}
-
-li.nice-list{
-    margin: 3%;
-}
-
-a.wide{
-    width: 60vw;
-}
