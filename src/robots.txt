@@ -1,4 +1,5 @@
 # Scrapper no scraping
 
 User-agent: *
+Allow: /
 Disallow: /private/
