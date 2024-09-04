@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("favicon.ico");
     eleventyConfig.addPassthroughCopy("./src/.well-known");
     eleventyConfig.addPassthroughCopy("./src/media");
-    eleventyConfig.addPassthroughCopy({ 'src/private/media/ ' : '/private/media/'});
+    eleventyConfig.addPassthroughCopy('src/private/media/');
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
     return {
         dir: {
