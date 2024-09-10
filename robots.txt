@@ -1,4 +1,4 @@
-# Scrapper no scraping
+# Scraper no scraping
 
 User-agent: *
 Allow: /
