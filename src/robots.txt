@@ -7,3 +7,6 @@ Disallow: /kobold-counter/
 
 User-Agent: ImagesiftBot
 Disallow: /
+
+User-Agent: Facebookbot
+Disallow: /
