@@ -1,5 +1,8 @@
 # Scraper no scraping
 
-User-agent: *
+User-Agent: *
 Allow: /
 Disallow: /private/
+
+User-Agent: ImagesiftBot
+Disallow: /
