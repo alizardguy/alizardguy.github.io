@@ -10,3 +10,6 @@ Disallow: /
 
 User-Agent: Facebookbot
 Disallow: /
+
+User-Agent: Rustybot
+Disallow: Overspace
