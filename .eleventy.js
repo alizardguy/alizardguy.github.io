@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/media");
     eleventyConfig.addPassthroughCopy('src/private/media/');
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
+    eleventyConfig.addPassthroughCopy({ 'src/ai.txt': '/ai.txt' });
     return {
         dir: {
             input: 'src',
