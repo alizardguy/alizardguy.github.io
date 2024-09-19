@@ -1,6 +1,6 @@
 *{
-    --text: #e9e2f1;
-    --background: #08383a;
+    --text: #a6adbb;
+    --background: #1b1b1e;
     --primary: #bca3d4;
     --secondary: #407336;
     --accent: #5eb4ac;
@@ -12,6 +12,7 @@
 body{
     color: var(--text);
     background-color: var(--background);
+    font-size: 1.25rem;
 }
 
 a.button {
