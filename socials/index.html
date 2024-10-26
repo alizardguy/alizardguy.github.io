@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Find me</title>
+<meta name="description" content="Places to find me.">
+<meta name="author" content="alizardguy">
+<link rel="stylesheet" href="/style/navbar.css">
+<link rel="stylesheet" href="/style/dividers.css">
+    <link rel="stylesheet" href="/style/base.css">
+</head>
+<body>
+    <header class="header">
+    <a href="/index" class="logo">alizardguy</a>
+    <nav>
+      <ul>
+        <li><a href="/index">Home</a></li>
+        <li><a href="/socials">Socials</a></li>
+        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <button class="hamburger-button" onclick="toggleMobileMenu()">☰</button>
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/socials">Socials</a></li>
+        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("mobile-menu").classList.toggle('open');
+      }
+    </script>
+</header>
+<link rel="stylesheet" href="/style/social.css">
+<main>
+    <h1>You can find me</h1>
+    <a class="link button" href="https://youtube.com/@alizardguy/">YouTube</a>
+    <a class="link button" href="https://bsky.app/profile/did:plc:nblqefnc2qwy7nt5misrkuqs">Personal Bluesky</a>
+    <a class="link button" href="https://bsky.app/profile/alizardguy.com">Art Bluesky</a>
+    <a class="link button" href="https://blog.alizardguy.com/">Blog</a>
+    <a class="link button" href="https://x.com/alizardguy">Twitter</a>
+</main>
+</body>
+</html>

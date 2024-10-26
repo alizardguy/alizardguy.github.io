@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Home</title>
+<meta name="description" content="Welcome to my site!">
+<meta name="author" content="alizardguy">
+<link rel="stylesheet" href="/style/navbar.css">
+<link rel="stylesheet" href="/style/dividers.css">
+    <link rel="stylesheet" href="/style/base.css">
+</head>
+<body>
+    <header class="header">
+    <a href="/index" class="logo">alizardguy</a>
+    <nav>
+      <ul>
+        <li><a href="/index">Home</a></li>
+        <li><a href="/socials">Socials</a></li>
+        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <button class="hamburger-button" onclick="toggleMobileMenu()">☰</button>
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/socials">Socials</a></li>
+        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("mobile-menu").classList.toggle('open');
+      }
+    </script>
+</header>
+<link rel="stylesheet" href="/style/home.css">
+<main>
+    <div>
+        <!--Top Intro Text-->
+        <div class="intro-block">
+            <h1 class="intro-text bluegradtext">I'm alizard</h1>
+        </div>
+        <div>
+            <p class="infosubline">Computer Science Student, Internet Lizard</p>
+        </div>
+        <!--About Me-->
+        <div class="infoblock">
+            <p>My name is Lizard, I am a programmer with an interest in Virtual Reality.</p>
+            <br>
+            <p>I am apart of <a href="https://www.theneolanders.com/">The Neolanders</a> and am active on <a href="https://resonite.com/">Resonite</a>.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
