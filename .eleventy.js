@@ -1,13 +1,8 @@
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("CNAME");
-    eleventyConfig.addPassthroughCopy("./src/style/");
-    eleventyConfig.addPassthroughCopy("./src/scripts/");
-    eleventyConfig.addPassthroughCopy("favicon.ico");
-    eleventyConfig.addPassthroughCopy("./src/.well-known");
-    eleventyConfig.addPassthroughCopy("./src/media");
-    eleventyConfig.addPassthroughCopy('src/private/media/');
-    eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
-    eleventyConfig.addPassthroughCopy({ 'src/ai.txt': '/ai.txt' });
+    eleventyConfig.addPassthroughCopy("./src/assets");
+    eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addWatchTarget("./src/assets");
     return {
         dir: {
             input: 'src',
@@ -19,4 +14,6 @@ module.exports = function(eleventyConfig) {
         htmlTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
     }
-}
+};
+  
+  
