@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, inital-scale=1.0">
-<title>Private</title>
-<meta name="description" content="Private page, not bots allowed">
+<title>Win10 Support</title>
+<meta name="description" content="Days until Windows 10 support ends">
 <meta name="author" content="alizardguy">
-<link rel="stylesheet" href="/style/navbar.css">
-<link rel="stylesheet" href="/style/dividers.css">
-    <link rel="stylesheet" href="/style/base.css">
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/dividers.css">
+    <link rel="stylesheet" href="/css/base.css">
 </head>
 <body>
     <header class="header">
@@ -34,8 +34,24 @@
       }
     </script>
 </header>
+<link rel="stylesheet" href="/css/home.css">
 <main>
-    <h1>Unlisted pages folder root</h1>
+    <div>
+        <h1>Windows 10 support ends in</h1>
+        <h2 id="amount">X days</h2>
+    </div>
 </main>
+<script>
+    let rn = new Date(); // Current date
+    let target = new Date("2025-10-14") // Day of death
+
+    console.log(target)
+
+    let differ = target.getTime() - rn.getTime();
+
+    differ = Math.round(differ / (1000 * 3600 * 24));
+
+    document.getElementById("amount").textContent = differ + " days";
+</script>
 </body>
 </html>
