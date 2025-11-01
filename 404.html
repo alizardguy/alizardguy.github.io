@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, inital-scale=1.0">
-<title>Oops!</title>
-<meta name="description" content="Error 404: Page Not Found">
-<meta name="author" content="alizardguy">
-<link rel="stylesheet" href="/css/navbar.css">
-<link rel="stylesheet" href="/css/dividers.css">
-    <link rel="stylesheet" href="/css/base.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
 </head>
+
 <body>
-    <header class="header">
-    <a href="/index" class="logo">alizardguy</a>
-    <nav>
-      <ul>
-        <li><a href="/index">Home</a></li>
-        <li><a href="/socials">Socials</a></li>
-        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
-      </ul>
+    
+<header class="site-header">
+    <nav class="site-header-frame">
+        <a href="">alizardguy</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">
+
+        <label for="menu-toggle">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </label>
+
+        <div id="main-navigation">
+            <a href="">Home</a>
+            <a href="">Blog</a>
+
+            <div class="dropdown-link">
+                <a href="https://www.youtube.com/@alizardguy">YouTube</a>
+                <a href="https://github.com/alizardguy">Github</a>
+            </div>
+        </div>
     </nav>
-    <div class="hamburger">
-      <button class="hamburger-button" onclick="toggleMobileMenu()">☰</button>
-      <ul id="mobile-menu" class="mobile-menu">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/socials">Socials</a></li>
-        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
-      </ul>
-    </div>
-    <script>
-      function toggleMobileMenu() {
-        document.getElementById("mobile-menu").classList.toggle('open');
-      }
-    </script>
 </header>
-<main style="text-align: center; padding-top: 50px;">
+<main>
+    <main style="text-align: center; padding-top: 50px;">
     <h1>Error 404</h1>
     <p>Page not found</p>
+</main>
 </main>
 </body>
 </html>

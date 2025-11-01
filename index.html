@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, inital-scale=1.0">
-<title>Home</title>
-<meta name="description" content="Welcome to my site!">
-<meta name="author" content="alizardguy">
-<link rel="stylesheet" href="/css/navbar.css">
-<link rel="stylesheet" href="/css/dividers.css">
-    <link rel="stylesheet" href="/css/base.css">
-</head>
-<body>
-    <header class="header">
-    <a href="/index" class="logo">alizardguy</a>
-    <nav>
-      <ul>
-        <li><a href="/index">Home</a></li>
-        <li><a href="/socials">Socials</a></li>
-        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
-      </ul>
-    </nav>
-    <div class="hamburger">
-      <button class="hamburger-button" onclick="toggleMobileMenu()">☰</button>
-      <ul id="mobile-menu" class="mobile-menu">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/socials">Socials</a></li>
-        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
-      </ul>
-    </div>
-    <script>
-      function toggleMobileMenu() {
-        document.getElementById("mobile-menu").classList.toggle('open');
-      }
-    </script>
-</header>
-<link rel="stylesheet" href="/css/home.css">
-<main>
-    <div>
-        <!--Top Intro Text-->
-        <div class="intro-block">
-            <h1 class="intro-text bluegradtext">I'm alizard</h1>
-        </div>
-        <div>
-            <p class="infosubline">Computer Science Student</p>
-        </div>
-        <!--About Me-->
-        <div class="infoblock">
-            <p>My name is Lizard, I am a programmer with an interest in Virtual Reality.</p>
-        </div>
-    </div>
-</main>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+</head>
+
+<body>
+    
+<header class="site-header">
+    <nav class="site-header-frame">
+        <a href="">alizardguy</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">
+
+        <label for="menu-toggle">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </label>
+
+        <div id="main-navigation">
+            <a href="">Home</a>
+            <a href="">Blog</a>
+
+            <div class="dropdown-link">
+                <a href="https://www.youtube.com/@alizardguy">YouTube</a>
+                <a href="https://github.com/alizardguy">Github</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <h1>My site!</h1>
+</main>
 </body>
 </html>
