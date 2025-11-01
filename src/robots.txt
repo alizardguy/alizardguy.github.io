@@ -1,8 +1,5 @@
-# Scraper no scraping
-
 User-Agent: *
 Allow: /
-Disallow: /private/
 Disallow: /kobold-counter/
 
 User-Agent: ImagesiftBot
