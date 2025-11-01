@@ -1,0 +1,19 @@
+body {
+    height: 100%;
+}
+
+main {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.link {
+    min-width: 50% !important;
+}
+
+.button, .button:hover {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff !important;
+    background-color: #264d49 !important;
+}

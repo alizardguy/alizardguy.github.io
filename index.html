@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title>Home</title>
+<meta name="description" content="Welcome to my site!">
+<meta name="author" content="alizardguy">
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/dividers.css">
+    <link rel="stylesheet" href="/css/base.css">
 </head>
-
 <body>
-    
-<header class="site-header">
-    <nav class="site-header-frame">
-        <a href="/index.html" class="logo">alizardguy</a>
-
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">
-
-        <label for="menu-toggle">
-            <a class="menu-toggle-button">🦎</a>
-        </label>
-
-        <ul id="main-navigation" class="nav-menu">
-            <li>
-                <a href="" class="nav-link">Home</a>
-            </li>
-
-            <li>
-                <a href="" class="nav-link">Blog</a>
-            </li>
-
-            <li class="dropdown">
-                <a href="" class="dropdown-link">
-                    Socials
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a href="">YouTube</a></li>
-                    <li><a href="">Github</a></li>
-                </ul>
-            </li>
-        </ul>
+    <header class="header">
+    <a href="/index" class="logo">alizardguy</a>
+    <nav>
+      <ul>
+        <li><a href="/index">Home</a></li>
+        <li><a href="/socials">Socials</a></li>
+        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
+      </ul>
     </nav>
+    <div class="hamburger">
+      <button class="hamburger-button" onclick="toggleMobileMenu()">☰</button>
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/socials">Socials</a></li>
+        <li><a href="https://blog.alizardguy.com/">Blog</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggleMobileMenu() {
+        document.getElementById("mobile-menu").classList.toggle('open');
+      }
+    </script>
 </header>
+<link rel="stylesheet" href="/css/home.css">
 <main>
-    <h1>My site!</h1>
+    <div>
+        <!--Top Intro Text-->
+        <div class="intro-block">
+            <h1 class="intro-text bluegradtext">I'm alizard</h1>
+        </div>
+        <div>
+            <p class="infosubline">Computer Science Student</p>
+        </div>
+        <!--About Me-->
+        <div class="infoblock">
+            <p>My name is Lizard, I am a programmer with an interest in Virtual Reality.</p>
+        </div>
+    </div>
 </main>
+
 </body>
 </html>
