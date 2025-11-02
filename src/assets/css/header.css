@@ -16,7 +16,8 @@ nav {
 
 .logo {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
+    font-weight: bolder;
     font-size: large;
 }
 

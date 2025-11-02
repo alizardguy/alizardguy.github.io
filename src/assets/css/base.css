@@ -1,10 +1,12 @@
 :root {
     --primary-color: #5180e6; /* blue-600 */
     --primary-hover-color: #5180e6; /* blue-700 */
-    --text-color: #374151; /* gray-700 */
-    --bg-color: #ffffff;
+    --text-color: #a6adbb; /* gray-700 */
+    --bg-color: #1b1b1e;
 }
 
 body {
     margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
